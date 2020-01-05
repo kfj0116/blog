@@ -1,0 +1,14 @@
+@mixin shadow {
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@mixin text-overflow($num) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+}

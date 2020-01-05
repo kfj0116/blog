@@ -1,0 +1,19 @@
+.header-wrap {
+  min-width: 1200px;
+  .header-nav {
+    width: 90%;
+    margin: 0 auto;
+    .header-login {
+      text-align: right;
+    }
+    .header-button {
+      width: 70px;
+      margin: 5px;
+      padding: 0;
+      text-align: center;
+    }
+    .ant-menu-horizontal {
+      border-bottom: 0;
+    }
+  }
+}

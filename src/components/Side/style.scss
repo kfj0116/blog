@@ -1,0 +1,21 @@
+.blog-side {
+  position: fixed;
+  width: inherit;
+  top: 68px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  .side-title {
+    font-size: 28px;
+    line-height: 48px;
+    color: #333;
+  }
+  .side-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+  }
+  .tag-cloud {
+    margin: 20px 0;
+  }
+}

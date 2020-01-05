@@ -1,0 +1,51 @@
+@import "./../../mixin.scss";
+.blog-project {
+  .project-list {
+    column-count: 2;
+    column-gap: 0;
+  }
+  .project-item {
+    break-inside: avoid;
+    padding-right: 5%;
+    padding-bottom: 20px;
+  }
+  .project-link {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: #fff;
+    @include shadow;
+  }
+  .project-cover {
+    width: 100%;
+  }
+  .project-title {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .project-info {
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+  }
+  .project-tag {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    border: 1px solid #1890ff;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1890ff;
+  }
+  .project-time {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    text-align: right;
+  }
+}
