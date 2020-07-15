@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Row, Col, Menu, Icon, Button } from "antd";
-import "./style.scss";
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Row, Col, Menu, Icon } from 'antd';
+import './style.scss';
 const Header: React.FC = () => {
-  const location = useLocation().pathname.split("/");
+  const location = useLocation().pathname.split('/');
   const [current, setCurrent] = useState(
-    location[1] && location[1] !== "" ? location[1] : "/"
+    location[1] && location[1] !== '' ? location[1] : '/'
   );
   useEffect(() => {
-    setCurrent(location[1] && location[1] !== "" ? location[1] : "/");
+    setCurrent(location[1] && location[1] !== '' ? location[1] : '/');
   }, [location]);
   return (
     <div className="header-wrap">
       <Row className="header-nav" type="flex">
-        <Col span={4}>
+        <Col span={6}>
           <h2>Fanjia Kong</h2>
         </Col>
-        <Col span={16}>
+        <Col span={18}>
           <Menu
-            onClick={e => setCurrent(e.key)}
+            onClick={(e) => setCurrent(e.key)}
             selectedKeys={[current]}
             mode="horizontal"
           >
@@ -53,16 +53,6 @@ const Header: React.FC = () => {
               </Link>
             </Menu.Item>
           </Menu>
-        </Col>
-        <Col span={4}>
-          <div className="header-login">
-            <Button className="header-button" type="primary" size="small">
-              Log in
-            </Button>
-            <Button className="header-button" type="danger" size="small">
-              Sign up
-            </Button>
-          </div>
         </Col>
       </Row>
     </div>
