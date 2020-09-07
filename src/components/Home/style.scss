@@ -1,5 +1,47 @@
-.blog-home {
-  height: 1000px;
-  padding: 10px;
-  background-color: #fff;
+@import './../../mixin.scss';
+
+.hot-list {
+  .hot-item {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    @include shadow;
+  }
+  .item-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog-cover {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .blog-info {
+    height: 20px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    @include text-overflow(1);
+  }
+  .blog-tag {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 0 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background-color: $blue;
+  }
+  .blog-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+  }
 }

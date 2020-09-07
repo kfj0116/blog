@@ -1,4 +1,4 @@
-@import "./../../mixin.scss";
+@import './../../mixin.scss';
 .blog-project {
   .project-list {
     column-count: 2;
@@ -36,11 +36,11 @@
     margin-right: 15px;
     margin-bottom: 5px;
     padding: 0 5px;
-    border: 1px solid #1890ff;
+    border: 1px solid $blue;
     border-radius: 5px;
     font-size: 14px;
     line-height: 20px;
-    color: #1890ff;
+    color: $blue;
   }
   .project-time {
     font-size: 14px;
