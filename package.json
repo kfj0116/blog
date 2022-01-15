@@ -6,7 +6,7 @@
     "antd": "^3.26.4",
     "customize-cra": "^0.9.1",
     "highlight.js": "^10.2.0",
-    "marked": "^1.1.1",
+    "marked": "^4.0.10",
     "randomcolor": "^0.5.4",
     "react": "^16.12.0",
     "react-app-rewired": "^2.1.5",
